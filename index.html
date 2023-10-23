@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resident Evil 4 Remake</title>
+
+  <!-- Link para a biblioteca Personalização Video -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.4/plyr.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.4/plyr.min.js"></script>
+  <!-- Link para a biblioteca Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Inclua o CSS do Fancybox Galeria Imagens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Ícone da página (favicon) -->
+  <link rel="shortcut icon" href="src/imagens/icons8-umbrella-corporation-240.png" type="image/x-icon">
+  <!-- Carregar fontes do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Condensed:wght@300;700&display=swap"
+    rel="stylesheet">
+  <!-- Link para a folha de estilo do Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- Fim folha de estilo do Owl Carousel -->
+
+  <link rel="stylesheet" href="src/css/estilo.css">
+  <link rel="stylesheet" href="src/css/responsive.css" />
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <a href="https://www.capcomusa.com" target="_blank" class="logo">
+      <img src="src/imagens/capcom-logo.png" alt="Logo-capcom">
+    </a>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#serie">sobre</a>
+      <a href="#recursos">recursos</a>
+      <a href="#galeria">galeria</a>
+      <a href="#preco">preço</a>
+      <a href="#noticias">newsletter</a>
+      <a href="#contato">contato</a>
+    </nav>
+    <!-- Menubar -->
+    <div class="fas fa-bars" id="menu-btn"></div>
+
+  </header>
+
+  <main id="home">
+    <div class="carrossel container carrossel-section">
+
+      <img class="imagem ativa" src="src/imagens/01.jpeg" alt="Leon S. Kennedy na vila" />
+
+      <img class="imagem" src="src/imagens/03.jpeg" alt="Leon S. Kennedy" />
+
+      <img class="imagem" src="src/imagens/02.jpeg" alt="Mercador" />
+
+      <img class="imagem" src="src/imagens/04.jpeg" alt="Jack Krauser" />
+
+      <img class="imagem" src="src/imagens/05.jpeg" alt="Leon S. Kennedy perfil" />
+
+      <img class="imagem" src="src/imagens/06.jpg" alt="Osmund Saddler" />
+
+    </div>
+      
+        <div class="conteudo">
+          <div class="informacoes">
+            <img class="logo" src="src/imagens/re4r-logo.webp" alt="logo do jogo Resident Evil 4" />
+            <p class="descricao">
+              Seis anos se passaram desde o desastre biológico em Raccoon City. O agente Leon S. Kennedy, um dos
+              sobreviventes do incidente, foi enviado para resgatar a filha raptada do presidente.
+            </p>
+            <a href="https://www.playstation.com/pt-br/games/resident-evil-4-remake/" target="_blank">
+              <button class="btn-saiba-mais">Comprar Agora</button>
+          </a>   
+          </div>
+        </div>
+           
+      <div class="botoes-carrossel">
+        <button class="botao selecionado" id="botao1"></button>
+        <button class="botao"></button>
+        <button class="botao"></button>
+        <button class="botao"></button>
+        <button class="botao"></button>
+        <button class="botao"></button>
+      </div>
+   
+    <aside class="menu-lateral">
+      <ul>
+        <li>
+          <a href="https://github.com/viniciussilvaspw" target="_blank">
+            <img src="src/imagens/github.png" alt="Icone GitHub" class="icone" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/vin%C3%ADcius-soares-5046331a7/" target="_blank">
+            <img src="src/imagens/linkedin-icon.png" alt="Icone LinkedIn" class="icone" />
+          </a>
+        </li>
+        <li>
+          <a href="https://store.steampowered.com/app/2050650/Resident_Evil_4/" target="_blank">
+            <img src="src/imagens/steam-icon.png" alt="Icone Steam" class="icone" />
+          </a>
+        </li>
+        <li>
+          <a href="https://store.playstation.com/pt-br/concept/10004473" target="_blank">
+            <img src="src/imagens/playstation-icon.png" alt="Icone PS Store" class="icone" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.xbox.com/pt-BR/games/store/resident-evil-4/9NNMTSTGMKFZ" target="_blank">
+            <img src="src/imagens/xbox-icon.png" alt="Icone Xbox Store" class="icone" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.capcomusa.com" target="_blank">
+            <img src="src/imagens/capcom-icon.png" alt="Icone Capcom" class="icone" />
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <section id="serie">
+    <h2>Sobre o Game</h2>
+    <article class="serie-content">
+      <img src="src/imagens/umbrella-logotipo.png" alt="umbrela-logo" class="sobre" />
+      <p class="descricao-serie">
+        "Resident Evil 4 é um jogo de ação e terror lançado em 2005 pela
+        Capcom. A história segue Leon S. Kennedy, um agente especial, enquanto
+        ele tenta resgatar a filha do presidente dos EUA, que foi sequestrada
+        por um culto misterioso. <br />
+        O jogo introduziu uma jogabilidade mais dinâmica e intensa, com Leon
+        enfrentando inimigos infectados por parasitas em uma vila isolada na
+        Espanha. Resident Evil 4 é conhecido por sua narrativa envolvente,
+        personagens memoráveis e continua sendo um dos melhores jogos de todos
+        os tempos."
+      </p>
+    </article>
+  </section>
+
+  <section class="slider-section" id="recursos">
+    <div class="container">
+      <h2>Recursos do jogo</h2>
+      <div class="image-slider owl-carousel">
+        <div class="slide">
+          <img src="src/imagens/item-01.jpg" alt="Slide 1" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Amuleto: "Munição para Pistola"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-02.jpg" alt="Slide 2" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Amuleto: "Erva Verde"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-03.jpg" alt="Slide 3" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Arma Especial: "Sentinel Nine"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-04.jpg" alt="Slide 4" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 - Cupom de Melhoria Exclusiva</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-05.jpg" alt="Slide 5" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Trajes de Leon e Ashley: "Casual"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-06.jpg" alt="Slide 6" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Amuleto: "Erva Verde"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-nav">
+        <button class="owl-prev"><span>&lt;</span></button>
+        <button class="owl-next"><span>&gt;</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="galeria">
+    <h2> Galeria de Imagens</h2>
+    <div class="gallery">
+      <a data-fancybox="gallery" href="src/imagens/galeria-01.jpg">
+        <img src="src/imagens/galeria-01.jpg" alt="Imagem 1">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-02.jpg">
+        <img src="src/imagens/galeria-02.jpg" alt="Imagem 2">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-03.jpg">
+        <img src="src/imagens/galeria-03.jpg" alt="Imagem 3">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-04.jpg">
+        <img src="src/imagens/galeria-04.jpg" alt="Imagem 4">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-05.jpg">
+        <img src="src/imagens/galeria-05.jpg" alt="Imagem 3">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-06.jpg">
+        <img src="src/imagens/galeria-06.jpg" alt="Imagem 4">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-07.jpg">
+        <img src="src/imagens/galeria-07.jpg" alt="Imagem 1">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-08.jpg">
+        <img src="src/imagens/galeria-08.jpg" alt="Imagem 2">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-09.jpg">
+        <img src="src/imagens/galeria-09.jpg" alt="Imagem 3">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-10.jpg">
+        <img src="src/imagens/galeria-10.jpg" alt="Imagem 4">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-11.jpg">
+        <img src="src/imagens/galeria-11.jpg" alt="Imagem 3">
+      </a>
+      <a data-fancybox="gallery" href="src/imagens/galeria-12.jpg">
+        <img src="src/imagens/galeria-12.jpg" alt="Imagem 4">
+      </a>
+      <!-- Adicione mais imagens conforme necessário -->
+    </div>
+  </section>
+
+  <section class="slider-section">
+    <div class="container">
+      <h2>Recursos do jogo</h2>
+      <div class="image-slider owl-carousel">
+        <div class="slide">
+          <img src="src/imagens/item-07.jpg" alt="Slide 1" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Amuleto: "Munição para Pistola"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-08.jpg" alt="Slide 2" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Amuleto: "Erva Verde"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-09.jpg" alt="Slide 3" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Arma Especial: "Sentinel Nine"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-10.jpg" alt="Slide 4" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 - Cupom de Melhoria Exclusiva</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-11.jpg" alt="Slide 5" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Trajes de Leon e Ashley: "Casual"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="src/imagens/item-06.jpg" alt="Slide 6" />
+          <div class="slide-content text-slider">
+            <h2>Resident Evil 4 Amuleto: "Erva Verde"</h2>
+            <p>
+              Lorem ipsum, dolor sit consectetur adipisicing elit. Rerum,
+              nobis?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-nav">
+        <button class="owl-prev"><span>&lt;</span></button>
+        <button class="owl-next"><span>&gt;</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="preco" class="secvideos">
+    <article class="spacevid">
+      <h2>Trailer oficial resident evil 4 remake</h2>
+      <div class="videos">
+        <ul>
+          <li>
+            <div class="custom-video">
+              <video id="video-player">
+                <source src="src/videos/ResidentEvil4-TrailerDeRevelação-leve.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+              <div class="watermark">
+                © 2023 Sony Interactive Entertainment Inc. Todos os direitos reservados.
+              </div>
+              <button id="custom-play-button" class="custom-play-button">Reproduzir</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <aside class="boxassine">
+      <h2>Compre agora na amazon</h2>
+      <img src="src/imagens/playstation-icon.png" alt="" class="disney" />
+      <span class="assine">por apenas:</span>
+      <span class="preco">R$ 259,50</span>
+      <span class="vantagens">Resident Evil 4 Remake e tenha acesso a conteúdos exclusivos</span>
+    </aside>
+  </section>
+
+  <section class="newsletter" id="noticias">
+    <form>
+      <h2>Nossa newsletter:</h2>
+      <input type="email" id="email" name="email" placeholder="Digite seu melhor e-mail" required />
+      <button type="submit">Inscreva-se</button>
+    </form>
+    <h3>Inscreva-se para receber as últimas atualizações <br> em sua caixa de entrada!</h3>
+    <img src="src/imagens/umbrella-logotipo.png" alt="logotipo umbrella" />
+  </section>
+
+  <section class="contact" id="contato">
+    <h2>Mapa Localização</h2>
+    <div class="row">
+      <!-- Cole o código do mapa da nova localização aqui -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.00796260916655!2d-60.00876325223109!3d-3.0776667234645343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1a9220fcb477%3A0xb71cc4df077875b3!2sParque%2010%20de%20Novembro%2C%20Manaus%20-%20AM%2C%2069054-050!5e0!3m2!1spt-BR!2sbr!4v1696830172507!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form action="" id="contact-form">
+        <h2>Entre Em Contato</h2>
+        <div class="inputBox">
+          <span class="fas fa-user"></span>
+          <input type="text" placeholder="Exemplo: João da Silva" name="nome" autocomplete="name">
+        </div>
+        <div class="inputBox">
+          <span class="fas fa-envelope"></span>
+          <input type="email" placeholder="Exemplo: seuemail@example.com" name="email" autocomplete="email">
+        </div>
+        <div class="inputBox">
+          <span class="fas fa-phone"></span>
+          <input type="tel" placeholder="Exemplo: 1234567890" name="telefone" autocomplete="tel">
+        </div>
+        <input type="submit" value="Entrar Em Contato" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="icones">
+        <ul>
+          <li>
+            <a href="https://github.com/viniciussilvaspw" target="_blank">
+              <img src="src/imagens/github.png" alt="Icone GitHub" class="icone" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-soares-5046331a7/" target="_blank">
+              <img src="src/imagens/linkedin-icon.png" alt="Icone LinkedIn" class="icone" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="src/imagens/capcom-icon.png" alt="Icone capcom-icon" class="icone" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="src/imagens/playstation-icon.png" alt="Icone playstation-icon" class="icone" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="src/imagens/steam-icon.png" alt="Icone Steam" class="icone" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="src/imagens/xbox-icon.png" alt="Icone x-icon" class="icone" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid-container">
+        <div class="coluna">
+          <h3>Sobre Nós</h3>
+          <p>Saiba mais sobre nossa equipe e nossa paixão por jogos.</p>
+        </div>
+        <div class="coluna">
+          <h3>Jogos Populares</h3>
+          <p>Descubra os jogos mais populares do momento e as últimas tendências.</p>
+        </div>
+        <div class="coluna">
+          <h3>Contato</h3>
+          <p>Entre em contato conosco para perguntas, parcerias e suporte.</p>
+        </div>
+        <div class="coluna">
+          <h3>Newsletter</h3>
+          <p>Inscreva-se em nossa newsletter para receber as últimas novidades e ofertas exclusivas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <span>TM & © Vinícius Soares. Todos os direitos reservados 2023.</span>
+    </div>
+  </footer>
+
+  <!-- Biblioteca JavaScript do jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Biblioteca JavaScript do Fancybox Galeria -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+  <!-- Biblioteca JavaScript do Carrossel -->
+  <script src="src/owlcarousel/owl.carousel.min.js"></script>
+
+  <script src="src/js/toggle.js"></script>
+  <script src="src/js/carrosel.js"></script>
+  <script src="src/js/banner.js"></script>
+  <script src="src/js/galeria.js"></script>
+  <script src="src/js/play-video.js"></script>
+  <script src="src/js/contato.js"></script>
+
+
+
+</body>
+
+</html>
